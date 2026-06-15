@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>omercanyy — Developer Productivity Tools</title>
+  <meta name="description" content="I build productivity tools for developers. Explore open-source projects designed to make your workflow faster and smoother.">
+  <meta name="author" content="omercanyy">
+  <meta name="theme-color" content="#0a0a0f">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="omercanyy — Developer Productivity Tools">
+  <meta property="og:description" content="Open-source productivity tools for developers.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://omercanyy.github.io">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Ambient background glow -->
+  <div class="ambient-glow" aria-hidden="true"></div>
+
+  <!-- ====== Navigation ====== -->
+  <nav class="nav" id="nav">
+    <div class="container">
+      <a href="#" class="nav-logo" aria-label="omercanyy home">&lt;omercanyy /&gt;</a>
+
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="nav-links" id="nav-links">
+        <!-- About link hidden until section is ready -->
+        <!-- <a href="#about" class="nav-link">About</a> -->
+        <a href="https://buymeacoffee.com/omercanyy" target="_blank" rel="noopener noreferrer" class="nav-cta">
+          ☕ Buy Me a Coffee
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ====== Hero ====== -->
+  <section class="hero" id="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="hero-title hero-title--compact reveal reveal-delay-1">
+          I build <span class="gradient-text">productivity tools</span> for developers.
+        </h1>
+
+        <p class="hero-description reveal reveal-delay-2">
+          Crafting lightweight, open-source tools that make developer workflows faster and smoother. Less friction, more flow.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== Projects ====== -->
+  <section class="projects" id="projects">
+    <div class="container">
+      <div class="projects-grid">
+        <!-- AG2R Card -->
+        <article class="project-card reveal reveal-delay-1" id="project-ag2r">
+          <div class="project-card-header">
+            <div class="project-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="5" y="2" width="14" height="20" rx="2" ry="2"/>
+                <line x1="12" y1="18" x2="12.01" y2="18"/>
+              </svg>
+            </div>
+          </div>
+
+          <h3 class="project-name">Antigravity 2.0 Remote Connector (AG2R)</h3>
+          <p class="project-description">
+            Antigravity 2.0 Remote. A lightweight, Android-friendly, heavily vibe-coded remote client for monitoring and interacting with Antigravity 2.0.
+          </p>
+
+          <div class="project-tags">
+            <span class="project-tag">Android</span>
+            <span class="project-tag">Remote Client</span>
+            <span class="project-tag">Monitoring</span>
+          </div>
+
+          <a href="https://github.com/the-future-company/ag2r" target="_blank" rel="noopener noreferrer" class="project-link">
+            View on GitHub
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"/>
+              <polyline points="12 5 19 12 12 19"/>
+            </svg>
+          </a>
+        </article>
+
+        <!-- Coming Soon Card -->
+        <article class="project-card coming-soon reveal reveal-delay-2">
+          <div class="coming-soon-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 2h14"/>
+              <path d="M5 22h14"/>
+              <path d="M19 2v4c0 1.38-1.13 2.5-2.53 3.4l-3.9 2.6c-.31.2-.31.6 0 .8l3.9 2.6c1.4.9 2.53 2.02 2.53 3.4v4"/>
+              <path d="M5 2v4c0 1.38 1.13 2.5 2.53 3.4l3.9 2.6c.31.2.31.6 0 .8l-3.9 2.6C6.13 16.78 5 17.9 5 19.3v4"/>
+            </svg>
+          </div>
+          <div class="coming-soon-content">
+            <h3 class="coming-soon-title">More coming soon</h3>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== About (hidden until ready) ====== -->
+  <section class="about" id="about" hidden>
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-label">// about</p>
+        <h2 class="section-title">Built by a Developer, for Developers</h2>
+      </div>
+
+      <div class="about-content">
+        <div class="about-text reveal reveal-delay-1">
+          <p>
+            I'm <strong>omercanyy</strong> — a developer who believes the best tools are the ones that get out of your way.
+            I build <strong>lightweight, focused utilities</strong> that solve real problems in developer workflows.
+          </p>
+          <br>
+          <p>
+            Everything I ship is <strong>open source</strong> because great tools should be accessible to everyone.
+            If my work saves you time, consider supporting it.
+          </p>
+        </div>
+
+        <div class="about-stats reveal reveal-delay-2">
+          <div class="stat-card">
+            <div class="stat-value">1+</div>
+            <div class="stat-label">Shipped Projects</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-value">100%</div>
+            <div class="stat-label">Open Source</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-value">∞</div>
+            <div class="stat-label">Ideas in the Pipeline</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-value">☕</div>
+            <div class="stat-label">Fueled by Coffee</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ====== Footer ====== -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-text">&copy; 2026 omercanyy. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="https://github.com/omercanyy" target="_blank" rel="noopener noreferrer" class="footer-link">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+          </svg>
+          GitHub
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
